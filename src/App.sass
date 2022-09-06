@@ -1,0 +1,49 @@
+$img-height: 133rem
+$img-width: 100rem
+
+*
+    margin: 0
+    padding: 0
+
+*,
+*::before,
+*::after
+    box-sizing: inherit
+
+html
+    box-sizing: border-box
+    font-size: 62.5%
+
+body
+    background: #0F2027 /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027) /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.container
+    min-height: 100vh
+    min-width: 100%
+
+    display: grid
+    place-content: center
+
+.shadow
+    height: 100%
+    width: 100%
+    position: fixed
+    top: 0
+    background-color: black
+    opacity: 0.7
+    z-index: 10
+
+#nachos
+    height: calc($img-height / 3)
+    width: calc($img-width / 3)
+
+.banner
+    z-index: 20
+    background: white
+    text-align: center
+
+#banner-nachos
+    height: calc($img-height / 2)
+    width: calc($img-width / 2)
